@@ -1,0 +1,255 @@
+@import "./fonts.scss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-blue-500;
+    border-radius: 10px;
+}
+
+a {
+    cursor: pointer;
+    &.link {
+        text-decoration: none;
+        color: #353535;
+        transition: 0.3s;
+        font-weight: 400;
+        font-size: 1.03em;
+        &:hover {
+            @apply text-blue-500;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    a {
+        margin-right: 15px;
+        &:first-child {
+            margin-right: 0;
+        }
+    }
+    button {
+        margin-right: 15px;
+    }
+}
+
+.slider-pagination {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        @apply bg-blue-500;
+        margin-left: 6px;
+        transition: 0.4s;
+        &:last-child {
+            margin-left: 0px;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        width: 25px;
+        @apply bg-blue-500;
+    }
+}
+
+footer {
+    .infos {
+        @apply justify-center;
+        @apply mt-10;
+        @apply md:mt-0;
+
+        ul {
+            list-style: none;
+            margin-right: 12px;
+            li:first-child {
+                font-size: 22px;
+            }
+
+            li:last-child {
+                font-size: 14px;
+            }
+        }
+    }
+    .will {
+        @apply mt-6;
+        li {
+            margin-top: 15px;
+        }
+    }
+}
+
+.sectionTitle {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Aviny";
+    font-size: 2rem;
+    font-weight: 700;
+    color: #263238;
+    b {
+        display: block;
+        -ms-flex: 1;
+        flex: 1;
+        height: 4px;
+        opacity: 0.4;
+        background-color: #263238;
+    }
+}
+
+.sectionTitleCenter {
+    span {
+        text-align: center;
+        margin: 0 15px;
+    }
+}
+
+.SliderPagination {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        width: 25px;
+        height: 13px;
+        border-radius: 15px;
+        cursor: pointer;
+        @apply border;
+        @apply border-solid;
+        @apply border-blue-500;
+        margin-left: 6px;
+        transition: 0.4s;
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 35px;
+        @apply bg-blue-500;
+    }
+}
+
+.article-body {
+    margin-top: 50px;
+    padding: 20px;
+    height: auto;
+    p {
+        text-align: justify;
+        margin: 15px 0px;
+        line-height: 40px;
+    }
+
+    h2 {
+        margin: 25px 0;
+    }
+
+    a {
+        color: #fca311;
+        transition: 0.5s;
+        &:hover {
+            color: #0096c7;
+        }
+    }
+}
+
+.post-body {
+
+    h2 {
+        @apply my-5;
+        @apply text-2xl font-semibold;
+    }
+    
+    p {
+        @apply text-base;
+        @apply leading-8;
+    }
+
+}
+
+.plyr {
+    --plyr-color-main: rgba(37, 99, 235, 1);
+    @apply rounded-theme;
+    @apply mt-10;
+}
+
+.season {
+    @apply flex;
+    @apply flex-col;
+    @apply sm:flex-row;
+    @apply items-center;
+    li {
+        @apply sm:border-r sm:border-solid sm:border-gray-300;
+        @apply sm:px-3;
+        @apply mt-3;
+        @apply sm:mt-0;
+        &:first-child {
+            border-right: none;
+            @apply pr-0;
+            @apply mt-0;
+        }
+        &:last-child {
+            span {
+                @apply text-[15px];
+                @apply font-medium;
+                @apply text-[#0089ff];
+            }
+        }
+    }
+}
+
+.profile-items {
+    li {
+        @apply mt-2.5;
+        &:first-child {
+            @apply mt-0;
+        }
+
+        button {
+            // !rounded-theme block !w-full !bg-gray-100 !py-2 !px-2 !text-sm
+            @apply rounded-theme #{!important};
+            @apply block;
+            @apply w-full #{!important};
+            @apply bg-gray-100 #{!important};
+            @apply p-2 #{!important};
+            @apply text-sm #{!important};
+            @apply duration-300;
+            &:hover {
+                @apply bg-blue-500 #{!important};
+                @apply text-white #{!important};
+            }
+        }
+
+        .active {
+            @apply bg-blue-500 #{!important};
+            @apply text-white #{!important};
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .infos {
+        margin-top: 50px;
+    }
+    .title-foo {
+        margin-top: 40px !important;
+    }
+}
