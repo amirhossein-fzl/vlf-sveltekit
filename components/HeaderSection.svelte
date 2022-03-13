@@ -6,7 +6,7 @@
     // console.log(OnlineCourseImage);
 </script>
 
-<Row class="!mt-24">
+<Row class="!mt-24 items-center">
     <Col lg={6}>
         <div class="text-center">
             <h1 class="text-[3.5rem] font-['Aviny']">با ویرولرن</h1>
@@ -22,5 +22,6 @@
 
     <Col lg={6}>
         <img src="/svg/online-course.svg" alt="Online course image" aria-hidden="false" />
+
     </Col>
 </Row>
