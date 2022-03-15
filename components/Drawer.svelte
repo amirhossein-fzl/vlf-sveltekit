@@ -21,7 +21,7 @@
             },
 		};
 	}
-
+    
     export let open = false;
     export let position = 'right';
     const left_or_right = position == 'right' ? 'right' : 'left';
@@ -30,7 +30,7 @@
 {#if open}
     <div class="container">
         <div class="backdrop" transition:fade={{ delay: 0, duration: 300 }} on:click={() => dispatch('close', false)} />
-        <div class={clsx('content', left_or_right, 'bg-white')} in:slideDraw={{ in: true, delay: 0, duration: 300 }} out:slideDraw={{ out: true, delay: 0, duration: 300 }}>
+        <div class={clsx('content', left_or_right, 'bg-white', $$props.class)} in:slideDraw={{ in: true, delay: 0, duration: 300 }} out:slideDraw={{ out: true, delay: 0, duration: 300 }}>
             <slot />
         </div>
     </div>

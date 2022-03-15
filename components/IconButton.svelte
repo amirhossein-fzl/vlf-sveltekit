@@ -118,6 +118,21 @@
                 }
                 @apply text-secondary-500;
             }
+            &.danger {
+                &:hover {
+                    @apply bg-red-50;
+                }
+                @apply text-red-500;
+            }
+        }
+
+        &.transparent {
+            &.danger {
+                &:hover {
+                    @apply bg-transparent;
+                }
+                @apply text-red-500;
+            }
         }
     }
 </style>
