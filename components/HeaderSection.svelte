@@ -9,8 +9,8 @@
 <Row class="!mt-24 items-center">
     <Col lg={6}>
         <div class="text-center">
-            <h1 class="text-[3.5rem] font-['Aviny']">با ویرولرن</h1>
-            <h2 class="mt-3 text-3xl font-['Aviny']">لحظه ای از تکنولوژی عقب نمانید !</h2>
+            <h1 class="text-[3.5rem] font-aviny">با ویرولرن</h1>
+            <h2 class="mt-3 text-3xl font-aviny">لحظه ای از تکنولوژی عقب نمانید !</h2>
             <p class="mt-8 text-base">آموزش آنلاین توسط بهترین اساتید برای ساخت آینده کاری شما و تضمین یادگیری شما در ویرولرن</p>
 
             <div class="mt-10 flex justify-evenly">
