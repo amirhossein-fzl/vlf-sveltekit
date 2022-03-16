@@ -3,6 +3,7 @@
     import NProgress from 'nprogress';
     import { navigating } from '$app/stores';
 
+    import '../styles/global.scss';
     import '../styles/nprogress.css';
     import '../styles/bootstrap-grid.scss';
 
@@ -21,4 +22,3 @@
 
 <slot></slot>
 
-<style src="../styles/global.scss"></style>
